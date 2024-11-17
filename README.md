@@ -5,7 +5,7 @@ This is state-of-the-art / cutting-edge Color Management but in its most minimal
 
 I don't think you can do a config more "plug and play play" than this one:
 - Inputs (textures) are in "linear"
-- Rendering and Nuke working space is also in "linear"
+- Rendering and Nuke working space are also in "linear"
 - View Transform is for Rec.1886 display
 
 There is no need to go wide gamut or anything complex to make your images look great. Enjoy !
