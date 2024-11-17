@@ -1,0 +1,134 @@
+ocio_profile_version: 1
+search_path: transforms 
+strictparsing: true
+luma: [0.2126, 0.7152, 0.0722]
+
+description: OpenDRT 0.3.5 for OCIO v1.2
+
+roles:
+  color_picking: linear
+  color_timing: tlog_egamut
+  compositing_Log: tlog_egamut
+  data: raw
+  default: linear
+  matte_paint: cineonlog_rec709
+  reference: lin_xyz
+  rendering: linear
+  scene_linear: linear
+  texture_paint: linear
+  mari_monitor: rec709_display
+  mari_scalar_monitor: rec709_display
+  mari_color_picker: rec709_display
+  mari_working: linear
+  mari_int8: srgb_texture
+  mari_int16: srgb_texture
+  mari_int_scalar: raw
+  mari_scalar8: raw
+  mari_float: linear
+
+displays:
+  Rec1886 100 nits video dim:
+    - !<View> {name: OpenDRT 0.3.5, colorspace: openDRT 0.3.5 - Rec.709 - 2.4 Gamma}
+    - !<View> {name: Un-tone-mapped, colorspace: rec709_display}
+    - !<View> {name: Log, colorspace: cineonlog_rec709}    
+    - !<View> {name: Raw, colorspace: linear}
+
+active_displays: [Rec1886 100 nits Video dim]
+active_views: [OpenDRT 0.3.5, Un-tone-mapped, Log, Raw]
+
+##################################### LOOKS ##############################################
+
+##################################### SCENE-REFERRED ##############################################
+
+colorspaces:
+  - !<ColorSpace>
+    name: linear
+    bitdepth: 32f
+    family: SceneReferred
+    description: Linear - Rec.709  
+    to_reference: !<FileTransform> {src: Rec709_2_XYZ.spimtx}
+    allocation: lg2
+    allocationvars: [-10, 7, 0.0056065625]
+
+  - !<ColorSpace>
+    name: cineonlog_rec709
+    bitdepth: 32f    
+    family: SceneReferred
+    description: Grading Space
+    to_reference: !<GroupTransform>
+      children:
+        - !<FileTransform> {src: CineonLog_2_Linear.spi1d, interpolation: linear}
+        - !<FileTransform> {src: Rec709_2_XYZ.spimtx}
+
+  - !<ColorSpace>
+    name: tlog_egamut
+    bitdepth: 32f    
+    family: SceneReferred
+    description: Grading Space
+    to_reference: !<GroupTransform>
+      children:
+        - !<FileTransform> {src: TLog_2_Linear.spi1d, interpolation: linear}
+        - !<FileTransform> {src: EGamut_2_XYZ.spimtx}
+
+  - !<ColorSpace>
+    name: lin_xyz
+    bitdepth: 32f
+    family: SceneReferred
+    description: linear reference space
+    allocation: lg2
+    allocationvars: [-10, 7, 0.0056065625]
+
+##################################### DISPLAY-REFERRED ##############################################    
+
+  - !<ColorSpace>
+    name: openDRT 0.3.5 - Rec.709 - 2.4 Gamma
+    family: DisplayReferred
+    bitdepth: 32f
+    from_reference: !<GroupTransform>
+      children:
+        - !<ColorSpaceTransform> {src: lin_xyz, dst: tlog_egamut}
+        - !<FileTransform> {src: OpenDRT-v0.3.5_TLog-EGamut_to_Rec1886.cube, interpolation: tetrahedral}
+    to_reference: !<GroupTransform>
+      children:
+        - !<FileTransform> {src: OpenDRT-v0.3.5_TLog-EGamut_to_Rec1886_inverse.cube, interpolation: tetrahedral}
+        - !<ColorSpaceTransform> {src: tlog_egamut, dst: lin_xyz}
+
+##################################### UTILITY ##############################################         
+
+  - !<ColorSpace>
+    name: raw
+    family: Utility
+    equalitygroup: Raw
+    bitdepth: 32f
+    description: The Raw color space
+    isdata: true
+    allocation: uniform
+    allocationvars: [0, 1]             
+
+  - !<ColorSpace>
+    name: srgb_texture
+    family: Utility
+    equalitygroup: sRGB - Texture
+    bitdepth: 32f
+    description: The sRGB - Texture color space
+    isdata: false
+    allocation: uniform
+    allocationvars: [0, 1]
+    from_reference: !<GroupTransform>
+      children:
+        - !<FileTransform> {src: Rec709_2_XYZ.spimtx, direction: inverse}
+        - !<FileTransform> {src: linear_to_sRGB.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: rec709_display
+    family: Utility
+    equalitygroup: Rec.709 - Display
+    bitdepth: 32f
+    description: The Rec.709 - Display color space
+    isdata: false
+    allocation: uniform
+    allocationvars: [0, 1]
+    from_reference: !<GroupTransform>
+      children:
+        - !<FileTransform> {src: Rec709_2_XYZ.spimtx, direction: inverse}
+        - !<FileTransform> {src: linear_to_rec1886.spi1d, interpolation: linear}
