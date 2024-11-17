@@ -4,7 +4,7 @@ Based on Jed Smith's repo https://github.com/jedypod/open-display-transform/ I w
 This is state-of-the-art / cutting-edge Color Management but in its most minimalistic and simple form.
 
 I don't think you can do a config more "plug and play play" than this one:
-- Inputs and textures is in "linear"
+- Inputs (textures) are in "linear"
 - Rendering and Nuke working space is also in "linear"
 - View Transform is for Rec.1886 display
 
