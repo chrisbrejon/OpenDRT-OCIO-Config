@@ -1,5 +1,5 @@
 # OpenDRT-OCIO-Config
-Based on Jed Smith's repo https://github.com/jedypod/open-display-transform/ I wanted to create a minimal OCIO config for full CG projects.
+Based on Jed Smith's repo https://github.com/jedypod/open-display-transform/ I wanted to create a minimal OCIO config of openDRT 0.3.5 for full CG projects.
 
 This is state-of-the-art / cutting-edge Color Management but in its most minimalistic and simple form.
 
