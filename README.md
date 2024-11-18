@@ -12,6 +12,7 @@ There is no need to go wide gamut or anything complex to make your images look g
 ![light_sabers_openDRT_0_3_5](https://github.com/user-attachments/assets/2ab46d1b-6f09-4159-a771-f5659ae789fc)
 ![photographic_scene_openDRT_0_3_5](https://github.com/user-attachments/assets/40a16fe6-cdbc-45a6-815c-03ad226276f9)
 ![lego_sailors_openDRT_0_3_5](https://github.com/user-attachments/assets/3b6e8b96-c77c-4a07-bbfa-ed133d15e777)
-![louise_concert_openDRT_0_3_5](https://github.com/user-attachments/assets/86309ef3-62d4-4c53-a5df-ca201215da5f)
+![louise_concert_openDRT_0_3_5](https://github.com/user-attachments/assets/75a872d1-09c6-4608-a1c0-b6ed88ef153f)
+
 
 
