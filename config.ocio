@@ -31,7 +31,7 @@ displays:
     - !<View> {name: OpenDRT 0.3.5, colorspace: openDRT 0.3.5 - Rec.709 - 2.4 Gamma}
     - !<View> {name: Un-tone-mapped, colorspace: rec709_display}
     - !<View> {name: Log, colorspace: cineonlog_rec709}    
-    - !<View> {name: Raw, colorspace: linear}
+    - !<View> {name: Raw, colorspace: raw}
 
 active_displays: [Rec1886 100 nits Video dim]
 active_views: [OpenDRT 0.3.5, Un-tone-mapped, Log, Raw]
