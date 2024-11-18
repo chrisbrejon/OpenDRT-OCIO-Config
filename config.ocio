@@ -12,7 +12,7 @@ roles:
   data: raw
   default: linear
   matte_paint: cineonlog_rec709
-  reference: lin_xyz
+  reference: srgb_texture
   rendering: linear
   scene_linear: linear
   texture_paint: linear
