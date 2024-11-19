@@ -19,5 +19,6 @@ For those curious out there, a few things about the config:
 - Reference color space is XYZ which is the base of all colourimetry
 - One may add easily colorspaces such as ACEScg or ACES2065-1 if needed
 - One also may add several displays for HDR output if needed (such as P3 D65 PQ)
+
 But I didn't do such thing because my goal was to provide a simple OCIOv1 config in its most essential form.
 
