@@ -20,3 +20,8 @@ For those curious out there, a few things about the config:
 
 My goal was to provide a "plug and play play" OCIOv1 config (14 megabytes!) in its most essential form, so CG artists can create beautiful pictures with it.
 
+Thanks !
+
+NB(1): Substance_painter roles were set following this page https://mrlixm.github.io/blog/substance-painter-color-management/
+NB(2): Ideally this config should fit the requirements of this issue https://github.com/AcademySoftwareFoundation/OpenColorIO/issues/2011
+
