@@ -25,6 +25,14 @@ roles:
   mari_int_scalar: raw
   mari_scalar8: raw
   mari_float: linear
+  substance_3d_painter_standard_srgb: srgb_texture
+  substance_3d_painter_bitmap_import_8bit: srgb_texture
+  substance_3d_painter_bitmap_import_16bit: srgb_texture
+  substance_3d_painter_bitmap_import_floating: linear
+  substance_3d_painter_substance_material: srgb_texture
+  substance_3d_painter_bitmap_export_8bit: srgb_texture
+  substance_3d_painter_bitmap_export_16bit: srgb_texture
+  substance_3d_painter_bitmap_export_floating: linear
 
 displays:
   Rec1886 100 nits video dim:
