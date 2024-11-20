@@ -1,14 +1,12 @@
 # OpenDRT-OCIO-Config
-Based on Jed Smith's repo https://github.com/jedypod/open-display-transform/ I wanted to create a minimal OCIO config of openDRT 0.3.5 for full CG projects.
+Based on Jed Smith's repo https://github.com/jedypod/open-display-transform/ I have created a minimal OCIO config of openDRT 0.3.5 for full CG projects.
 
-This is state-of-the-art Color Management in its most minimalistic and simple form.
-
-I don't think you can do a config more "plug and play play" than this one:
+This is state-of-the-art Color Management in its most minimalistic and simple form:
 - Inputs (textures) are in "linear"
 - Rendering and Nuke working space are also in "linear"
 - View Transform is for Rec.1886 display
 
-There is no need to go wide gamut or anything complex to make your images look great. Enjoy !
+There is no need to go wide gamut or do anything complex to make your images look great. Enjoy!
 
 ![light_sabers_openDRT_0_3_5](https://github.com/user-attachments/assets/2ab46d1b-6f09-4159-a771-f5659ae789fc)
 ![photographic_scene_openDRT_0_3_5](https://github.com/user-attachments/assets/40a16fe6-cdbc-45a6-815c-03ad226276f9)
@@ -17,8 +15,8 @@ There is no need to go wide gamut or anything complex to make your images look g
 
 For those curious out there, a few things about the config:
 - Reference color space is XYZ which is the base of all colourimetry
-- An inverse of the View Transform has been provided even though openDRT does not invert perfectly (it was never Jed's goal anyway)
+- An inverse of the View Transform has been provided even though it is not perfect (it was never Jed's goal anyway)
 - One may easily add several displays for HDR output if needed (such as P3 D65 PQ)
 
-My goal was to provide a simple OCIOv1 config (14 megabytes!) in its most essential form, so CG artists can create the most amazing pictures with it.
+My goal was to provide a "plug and play play" OCIOv1 config (14 megabytes!) in its most essential form, so CG artists can create beautiful pictures with it.
 
