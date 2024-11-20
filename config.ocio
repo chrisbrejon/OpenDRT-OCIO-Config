@@ -74,9 +74,27 @@ colorspaces:
     name: lin_xyz
     bitdepth: 32f
     family: SceneReferred
-    description: linear reference space
+    description: Linear reference space
     allocation: lg2
     allocationvars: [-10, 7, 0.0056065625]
+
+  - !<ColorSpace>
+    name: aces
+    bitdepth: 32f
+    family: SceneReferred
+    description: Linear - AP0
+    to_reference: !<MatrixTransform> {matrix: [0.9999017, 0.0000000, 0.0000983, 0, 0.3439664, 0.7281661, -0.0721325, 0, 0.0000000, 0.0000000, 1.0000000, 0, 0, 0, 0, 1]}
+    allocation: lg2
+    allocationvars: [-10, 7, 0.0056065625]  
+
+  - !<ColorSpace>
+    name: acescg
+    bitdepth: 32f
+    family: SceneReferred
+    description: Linear - AP1  
+    to_reference: !<MatrixTransform> {matrix: [0.6953833105, 0.1406652586, 0.1639514308, 0, 0.2722287168, 0.6740817658, 0.0536895174, 0, -0.0055258826, 0.0040252103, 1.0015006723, 0, 0, 0, 0, 1]}
+    allocation: lg2
+    allocationvars: [-10, 7, 0.0056065625]    
 
 ##################################### DISPLAY-REFERRED ##############################################    
 
