@@ -1,7 +1,7 @@
 # OpenDRT-OCIO-Config
 Based on Jed Smith's repo https://github.com/jedypod/open-display-transform/ I wanted to create a minimal OCIO config of openDRT 0.3.5 for full CG projects.
 
-This is state-of-the-art / cutting-edge Color Management but in its most minimalistic and simple form.
+This is state-of-the-art Color Management in its most minimalistic and simple form.
 
 I don't think you can do a config more "plug and play play" than this one:
 - Inputs (textures) are in "linear"
@@ -17,8 +17,8 @@ There is no need to go wide gamut or anything complex to make your images look g
 
 For those curious out there, a few things about the config:
 - Reference color space is XYZ which is the base of all colourimetry
-- One may add easily colorspaces such as ACEScg or ACES2065-1 if needed
-- One also may add several displays for HDR output if needed (such as P3 D65 PQ)
+- An inverse of the View Transform has been provided even though openDRT does not invert perfectly (it was never Jed's goal anyway)
+- One may easily add several displays for HDR output if needed (such as P3 D65 PQ)
 
-But I didn't do such thing because my goal was to provide a simple OCIOv1 config in its most essential form.
+My goal was to provide a simple OCIOv1 config (14 megabytes!) in its most essential form, so CG artists can create the most amazing pictures with it.
 
