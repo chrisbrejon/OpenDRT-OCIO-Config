@@ -46,7 +46,7 @@ colorspaces:
     bitdepth: 32f
     family: SceneReferred
     description: Linear - Rec.709  
-    to_reference: !<FileTransform> {src: Rec709_2_XYZ.spimtx}
+    to_reference: !<MatrixTransform> {matrix: [0.4338873, 0.3762240, 0.1898886, 0, 0.2126390, 0.7151687, 0.0721923, 0, 0.0177500, 0.1094476, 0.8728023, 0, 0, 0, 0, 1]}
     allocation: lg2
     allocationvars: [-10, 7, 0.0056065625]
 
@@ -58,7 +58,7 @@ colorspaces:
     to_reference: !<GroupTransform>
       children:
         - !<FileTransform> {src: CineonLog_2_Linear.spi1d, interpolation: linear}
-        - !<FileTransform> {src: Rec709_2_XYZ.spimtx}
+        - !<MatrixTransform> {matrix: [0.4338873, 0.3762240, 0.1898886, 0, 0.2126390, 0.7151687, 0.0721923, 0, 0.0177500, 0.1094476, 0.8728023, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace>
     name: tlog_egamut
@@ -68,7 +68,7 @@ colorspaces:
     to_reference: !<GroupTransform>
       children:
         - !<FileTransform> {src: TLog_2_Linear.spi1d, interpolation: linear}
-        - !<FileTransform> {src: EGamut_2_XYZ.spimtx}
+        - !<MatrixTransform> {matrix: [0.742167, 0.172592, 0.085241, 0, 0.280131, 0.820207, -0.100337, 0, -0.095295, -0.066945, 1.162240, 0, 0, 0, 0, 1]}
 
   - !<ColorSpace>
     name: lin_xyz
@@ -116,7 +116,7 @@ colorspaces:
     allocationvars: [0, 1]
     from_reference: !<GroupTransform>
       children:
-        - !<FileTransform> {src: Rec709_2_XYZ.spimtx, direction: inverse}
+        - !<MatrixTransform> {matrix: [0.4338873, 0.3762240, 0.1898886, 0, 0.2126390, 0.7151687, 0.0721923, 0, 0.0177500, 0.1094476, 0.8728023, 0, 0, 0, 0, 1], direction: inverse}
         - !<FileTransform> {src: linear_to_sRGB.spi1d, interpolation: linear}
 
   - !<ColorSpace>
@@ -130,5 +130,5 @@ colorspaces:
     allocationvars: [0, 1]
     from_reference: !<GroupTransform>
       children:
-        - !<FileTransform> {src: Rec709_2_XYZ.spimtx, direction: inverse}
+        - !<MatrixTransform> {matrix: [0.4338873, 0.3762240, 0.1898886, 0, 0.2126390, 0.7151687, 0.0721923, 0, 0.0177500, 0.1094476, 0.8728023, 0, 0, 0, 0, 1], direction: inverse}
         - !<FileTransform> {src: linear_to_rec1886.spi1d, interpolation: linear}
