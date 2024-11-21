@@ -12,6 +12,7 @@ There is no need to go wide gamut or do anything complex to craft beautiful imag
 ![photographic_scene_openDRT_0_3_5](https://github.com/user-attachments/assets/40a16fe6-cdbc-45a6-815c-03ad226276f9)
 ![lego_sailors_openDRT_0_3_5](https://github.com/user-attachments/assets/271591b9-d83b-4eb4-aa6e-df0fb0601aac)
 ![louise_concert_openDRT_0_3_5](https://github.com/user-attachments/assets/75a872d1-09c6-4608-a1c0-b6ed88ef153f)
+![color_sweep_openDRT_0_3_5](https://github.com/user-attachments/assets/03cd089b-6cce-4a5f-a091-84a6e09f8816)
 
 ## A few things about the config
 * Reference color space is XYZ which is the base of all colourimetry
