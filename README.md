@@ -18,10 +18,8 @@ For those curious out there, a few things about the config:
 - An inverse of the View Transform has been provided even though it is not perfect (it was never Jed's goal anyway)
 - One may easily add several displays for HDR output if needed (such as P3 D65 PQ)
 
-My goal was to provide a "plug and play play" OCIOv1 config (14 megabytes!) in its most essential form, so CG artists can create beautiful pictures with it.
+My goal was to provide a "plug and play play" OCIOv1 config in its most essential form, so CG artists can create beautiful pictures with it. Thanks !
 
-Thanks !
-
-* NB(1): Substance_painter roles were set following this page https://mrlixm.github.io/blog/substance-painter-color-management/
-* NB(2): Ideally this config should fit the requirements of this issue https://github.com/AcademySoftwareFoundation/OpenColorIO/issues/2011
+* NB(1): Substance_painter roles were set following [this page](https://mrlixm.github.io/blog/substance-painter-color-management/)
+* NB(2): Ideally this config should fit the requirements of [this issue](https://github.com/AcademySoftwareFoundation/OpenColorIO/issues/2011)
 
