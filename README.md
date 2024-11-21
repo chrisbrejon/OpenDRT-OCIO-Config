@@ -1,5 +1,5 @@
 # OpenDRT-OCIO-Config
-Based on Jed Smith's repo https://github.com/jedypod/open-display-transform/ I have created a minimal OCIO config of openDRT 0.3.5 for full CG projects.
+Based on [Jed Smith's repo](https://github.com/jedypod/open-display-transform/) I have created a minimal OCIO config of openDRT 0.3.5 for full CG projects.
 
 This is state-of-the-art Color Management in its most minimalistic and simple form:
 - Inputs (textures) are in "linear"
@@ -22,6 +22,6 @@ My goal was to provide a "plug and play play" OCIOv1 config (14 megabytes!) in i
 
 Thanks !
 
-NB(1): Substance_painter roles were set following this page https://mrlixm.github.io/blog/substance-painter-color-management/
-NB(2): Ideally this config should fit the requirements of this issue https://github.com/AcademySoftwareFoundation/OpenColorIO/issues/2011
+* NB(1): Substance_painter roles were set following this page https://mrlixm.github.io/blog/substance-painter-color-management/
+* NB(2): Ideally this config should fit the requirements of this issue https://github.com/AcademySoftwareFoundation/OpenColorIO/issues/2011
 
