@@ -17,6 +17,8 @@ There is no need to go wide gamut or do anything complex to craft beautiful imag
 ## A few things about the config
 * Reference color space is XYZ which is the base of all colourimetry
 * "linear" stands for "linear-bt.709"
+* "cineonlog_rec709" can be used for a Matte-Painting workflow in Photoshop
+* "tlog_egamut" is the Shaper space and can also be used color timing and some log operations in Nuke (such as sharpen)
 * An inverse of the View Transform has been provided even though it is not perfect (it was never Jed's goal anyway)
 * One may easily add several displays for HDR output if needed (such as P3-D65-PQ)
 
