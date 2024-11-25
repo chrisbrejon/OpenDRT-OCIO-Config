@@ -8,11 +8,11 @@ There is no need to go wide gamut or do anything complex to **craft beautiful im
 
 # Image Examples
 <p>
-    <img ![hue_sweep_openDRT_0_3_5] width="192" height="108" src="https://github.com/user-attachments/assets/7fba91b0-5acf-4ce6-9f96-0874b921f9aa" >  
-    <img ![photographic_scene_openDRT_0_3_5] width="192" height="108" src="https://github.com/user-attachments/assets/40a16fe6-cdbc-45a6-815c-03ad226276f9" >
-    <img ![light_sabers_openDRT_0_3_5] width="192" height="108" src="https://github.com/user-attachments/assets/58ce22fb-5f47-4212-afd4-5de5d64dffc1" >
-    <img ![lego_sailors_openDRT_0_3_5] width="192" height="108" src="https://github.com/user-attachments/assets/728e804f-c80e-4dfb-97b8-d161ad1e6d2c" >
-    <img [louise_concert_openDRT_0_3_5] width="192" height="108" src="https://github.com/user-attachments/assets/1e7e0abb-dbca-44fe-9ee6-d8b063c9096e" >
+    <img ![hue_sweep_openDRT_0_3_5] width="144" height="81" src="https://github.com/user-attachments/assets/7fba91b0-5acf-4ce6-9f96-0874b921f9aa" >  
+    <img ![photographic_scene_openDRT_0_3_5] width="144" height="81" src="https://github.com/user-attachments/assets/40a16fe6-cdbc-45a6-815c-03ad226276f9" >
+    <img ![light_sabers_openDRT_0_3_5] width="144" height="81" src="https://github.com/user-attachments/assets/58ce22fb-5f47-4212-afd4-5de5d64dffc1" >
+    <img ![lego_sailors_openDRT_0_3_5] width="144" height="81" src="https://github.com/user-attachments/assets/728e804f-c80e-4dfb-97b8-d161ad1e6d2c" >
+    <img [louise_concert_openDRT_0_3_5] width="144" height="81" src="https://github.com/user-attachments/assets/1e7e0abb-dbca-44fe-9ee6-d8b063c9096e" >
 </p>
 
 Original files (encoded in "linear-AP0") are available [here](https://www.dropbox.com/scl/fo/fhzx0bcwcjylek1oz7kjc/ACGfmi0EHeufVOQPZLvvk7w?rlkey=53cp61955hbns8x46j6cf8k55&e=1&dl=0).
