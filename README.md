@@ -21,10 +21,10 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 * Reference color space is XYZ which is the base of all colourimetry
 * "linear" stands for "linear_bt.709"
 * "cineonlog_rec709" can be used for a Matte-Painting workflow in Photoshop
-* "tlog_egamut" is the shaper space and can also be used color timing and some log operations (such as sharpen)
+* "tlog_egamut" is the shaper space. It can also be used for color timing and some log operations (such as sharpen)
 * Substance_painter roles were set following [this page](https://mrlixm.github.io/blog/substance-painter-color-management/)
 * An inverse of the View Transform has been provided even though it is not perfect
-* One may easily add several colorspaces or displays for HDR output if needed (such as P3-D65-PQ)
+* One may easily add several colorspaces or displays for HDR output if needed (such as "p3_d65_pq")
 
 # Looks
 * So far two looks have been added: "Contrast CDL" and "Warmy CDL"
