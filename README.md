@@ -21,20 +21,15 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 * Reference color space is XYZ which is the base of all colourimetry
 * "linear" stands for "linear_bt.709"
 * "cineonlog_rec709" can be used for a Matte-Painting workflow in Photoshop
-
 * "tlog_egamut" is the shaper space and can also be used color timing and some log operations (such as sharpen)
-* An inverse of the View Transform has been provided even though it is not perfect (it was never Jed's goal anyway)
-* One may easily add several displays for HDR output if needed (such as P3-D65-PQ)
+* Substance_painter roles were set following [this page](https://mrlixm.github.io/blog/substance-painter-color-management/)
+* An inverse of the View Transform has been provided even though it is not perfect
+* One may easily add several colorspaces or displays for HDR output if needed (such as P3-D65-PQ)
 
 # Looks
-* So far three looks have been added: "Contrast Grade", "Contrast CDL" and "Warmy CDL"
+* So far two looks have been added: "Contrast CDL" and "Warmy CDL"
 * They have been inspired by the Filmic and AgX OCIO configs (please find links below)
 * The use of Looks is highly recommended with Open DRT
-
-## Please note
-
-* Substance_painter roles were set following [this page](https://mrlixm.github.io/blog/substance-painter-color-management/)
-* Ideally this config should fit the requirements of [this issue](https://github.com/AcademySoftwareFoundation/OpenColorIO/issues/2011)
 
 # Other available Color Management Workflows
 | Name                                                                                             | Author               | Release date |              Observations                             |
