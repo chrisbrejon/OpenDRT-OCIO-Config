@@ -1,14 +1,13 @@
 # OpenColorIO configuration file for any DCC software
 # Based on OpenDRT by Jed Smith: https://github.com/jedypod/open-display-transform
 # Special thanks to Jed Smith, Zach Lewis and Troy Sobotka
-# To use one of the looks, just add this line "- !<View> {name: OpenDRT 0.3.5 - Contrast, colorspace: openDRT 0.3.5 - Rec.709 - 2.4 Gamma, looks: Contrast CDL}"
 
-ocio_profile_version: 2
-search_path: transforms 
+ocio_profile_version: 1
+search_path: transforms:looks
 strictparsing: true
 luma: [0.2126, 0.7152, 0.0722]
 
-description: OpenDRT 0.3.5 for OCIO v2.0
+description: OpenDRT 0.3.5 for OCIO v1.2
 
 roles:
   color_picking: linear
@@ -165,11 +164,11 @@ colorspaces:
 ######################################## LOOKS ######################################################
 
 looks:
-  - !<Look>
-    name: Contrast Grade
-    process_space: tlog_egamut
-    description: A contrast boost using a grading primary transform
-    transform: !<GradingPrimaryTransform> {style: log, contrast: {rgb: [1.2, 1.2, 1.2], master: 1}, saturation: 1, pivot: {contrast: -0.2}}
+#  - !<Look>
+#    name: Contrast Grade
+#    process_space: tlog_egamut
+#    description: A contrast boost using a grading primary transform
+#    transform: !<GradingPrimaryTransform> {style: log, contrast: {rgb: [1.2, 1.2, 1.2], master: 1}, saturation: 1, pivot: {contrast: -0.2}}
                            
   - !<Look>
     name: Contrast CDL
