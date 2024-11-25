@@ -20,8 +20,8 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 # About the config
 * Reference color space is XYZ which is the base of all colourimetry
 * "linear" stands for "linear_bt.709"
-* "cineonlog_rec709" can be used for a Matte-Painting workflow in Photoshop
-* "tlog_egamut" is the shaper space. It can also be used for color timing and some log operations (such as sharpen)
+* "cineonlog_rec709" can be used for a matte-painting workflow in Photoshop
+* "tlog_egamut" is the shaper space. It can be used for color timing and some log operations (such as sharpen)
 * Substance_painter roles were set following [this page](https://mrlixm.github.io/blog/substance-painter-color-management/)
 * An inverse of the View Transform has been provided even though it is not perfect
 * One may easily add several colorspaces or displays for HDR output if needed (such as "p3_d65_pq")
@@ -35,12 +35,12 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 | Name                                                                                             | Author               | Release date |              Observations                             |
 |:---:                                                                                             |         :---:        |      :---:   |                 :---:                                 |
 | [ARRI K1S1](https://www.arri.com/en/learn-help/learn-help-camera-system/tools/lut-generator)     | Harald Brendel       | 2011         | THE most used LUT on the planet (ARRI Alexa workflow) |
-| [Filmic](https://github.com/sobotka/filmic-blender)                                              | Troy Sobotka         | 2017         | Original Blender Color Management Workflow used on [this movie](https://www.youtube.com/watch?v=uf3ALGKgpGU) |
+| [Filmic](https://github.com/sobotka/filmic-blender)                                              | Troy Sobotka         | 2017         | Original Blender Color Management used on [this movie](https://www.youtube.com/watch?v=uf3ALGKgpGU) |
 | [RED IPP2](https://support.red.com/hc/en-us/articles/360041467533-RED-LUT-Downloads)             | Graeme Natress       | 2017         | RED Image Processing Pipeline |
 | [ACES](https://github.com/AcademySoftwareFoundation/OpenColorIO-Config-ACES/releases)            | AMPAS                | 2021         | Color Encoding System developed by the Academy and used on [this movie](https://www.youtube.com/watch?v=TnGl01FkMMo) |
 | [Sony Venice](https://sonycine.com/resources/luts/)                                              | Sony / Picture Shop  | 2022         | LUT files made in partnership with [Picture Shop](https://www.pictureshop.com/) |
 | [ARRI Reveal](https://www.arri.com/en/learn-help/learn-help-camera-system/tools/lut-generator)   | Sean Cooper          | 2022         | The new ARRI Alexa35 workflow described [here](https://www.youtube.com/watch?v=s_RXjVeC_7s) |
 | [TCAMv3](https://www.filmlight.ltd.uk/support/customer-login/colourspaces/colourspaces.php)      | Daniele Siragusano   | 2024         | Baselight Color Management Workflow explained [here](https://youtu.be/DL4n6LErMbw?t=325) |
-| [AgX Blender](https://github.com/EaryChow/AgX)                                                   | Eary Chow            | 2023         | New Blender Color Management Workflow used on [this video game](https://www.youtube.com/watch?v=mVjBRZqajYY) |
+| [AgX Blender](https://github.com/EaryChow/AgX)                                                   | Eary Chow            | 2023         | New Blender Color Management used on [this video game](https://www.youtube.com/watch?v=mVjBRZqajYY) |
 | [AgX SB2383](https://github.com/sobotka/SB2383-Configuration)                                    | Troy Sobotka         | 2024         | Minimal AgX OCIO Config using Linear BT.709 |
 | [JP-2499](https://github.com/jedypod/JP2499)                                                     | Juan Pablo Zambrano  | 2024         | A very popular picture formation pipeline described [here](https://www.liftgammagain.com/forum/index.php?threads/2499-drt-an-alternative-picture-formation-pipeline.18639/) |
