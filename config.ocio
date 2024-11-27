@@ -12,11 +12,10 @@ description: OpenDRT 0.3.5 for OCIO v1.2
 roles:
   color_picking: linear
   color_timing: tlog_egamut
-  compositing_Log: tlog_egamut
+  compositing_log: tlog_egamut
   data: raw
   default: linear
   matte_paint: cineonlog_rec709
-  reference: srgb_texture
   rendering: linear
   scene_linear: linear
   texture_paint: linear
