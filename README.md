@@ -30,7 +30,9 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 * So far two looks have been added: "Contrast CDL" and "Warmy CDL"
 * They have been inspired by the Filmic and AgX OCIO configs (please find links below)
 * The use of Looks is highly recommended with Open DRT
-* To use one of the looks, you need to combine it with a View (it is not complicated)
+* To use one of the looks, you need to combine it with a View. Like this for instance:
+
+```- !<View> {name: OpenDRT 0.3.5 Contrast, colorspace: openDRT 0.3.5 - Rec.709 - 2.4 Gamma, looks: Contrast CDL}```
 
 # Other available Color Management Workflows
 | Name                                                                                             | Author               | Release date |              Observations                             |
