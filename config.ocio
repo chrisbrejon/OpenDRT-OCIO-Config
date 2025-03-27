@@ -7,7 +7,7 @@ search_path: transforms:looks
 strictparsing: true
 luma: [0.2126, 0.7152, 0.0722]
 
-description: OpenDRT 0.3.5 for OCIO v1.2
+description: OpenDRT 1.0.0 for OCIO v1.2
 
 roles:
   color_picking: linear
@@ -41,13 +41,13 @@ roles:
 
 displays:
   Rec1886 100 nits video dim:
-    - !<View> {name: OpenDRT 0.3.5, colorspace: openDRT 0.3.5 - Rec.709 - 2.4 Gamma}    
+    - !<View> {name: OpenDRT 1.0.0, colorspace: openDRT 1.0.0 - Rec.709 - 2.4 Gamma}    
     - !<View> {name: Display Encoding, colorspace: rec709_display}
     - !<View> {name: Log, colorspace: cineonlog_rec709}    
     - !<View> {name: None, colorspace: non-colour data}
 
 active_displays: [Rec1886 100 nits Video dim]
-active_views: [OpenDRT 0.3.5, Display Encoding, Log, None]
+active_views: [OpenDRT 1.0.0, Display Encoding, Log, None]
 
 ##################################### SCENE-REFERRED ##############################################
 
@@ -110,17 +110,17 @@ colorspaces:
 ##################################### DISPLAY-REFERRED ##############################################    
 
   - !<ColorSpace>
-    name: openDRT 0.3.5 - Rec.709 - 2.4 Gamma
+    name: openDRT 1.0.0 - Rec.709 - 2.4 Gamma
     family: DisplayReferred
     bitdepth: 32f
     description: State-of-the-art Color Management Workflow
     from_reference: !<GroupTransform>
       children:
         - !<ColorSpaceTransform> {src: lin_xyz, dst: tlog_egamut}
-        - !<FileTransform> {src: OpenDRT-v0.3.5_TLog-EGamut_to_Rec1886.cube, interpolation: tetrahedral}
+        - !<FileTransform> {src: OpenDRT_Default_v1.0.0_tlog-egamut_to_Rec1886.cube, interpolation: tetrahedral}
     to_reference: !<GroupTransform>
       children:
-        - !<FileTransform> {src: OpenDRT-v0.3.5_TLog-EGamut_to_Rec1886_inverse.cube, interpolation: tetrahedral}
+        - !<FileTransform> {src: OpenDRT_Default_v1.0.0_tlog-egamut_to_Rec1886_inverse.cube, interpolation: tetrahedral}
         - !<ColorSpaceTransform> {src: tlog_egamut, dst: lin_xyz}
 
 ############################################## UTILITY ##############################################         
