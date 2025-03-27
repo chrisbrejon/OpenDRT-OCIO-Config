@@ -1,5 +1,5 @@
 # OpenDRT-OCIO-Config
-Based on [Jed Smith's repo](https://github.com/jedypod/open-display-transform/) I have created a minimal OCIO config of openDRT 0.3.5 for full CG projects. This is **state-of-the-art Color Management** in its most minimalistic and simple form:
+Based on [Jed Smith's repo](https://github.com/jedypod/open-display-transform/) I have created a minimal OCIO config of openDRT 1.0.0 for full CG projects. This is **state-of-the-art Color Management** in its most minimalistic and simple form:
 * Inputs (textures) are in "linear"
 * Rendering and Nuke working space are also in "linear"
 * View Transform is for Rec.1886 display
@@ -33,7 +33,7 @@ Original files (encoded in "linear-AP0") are available [here](https://www.dropbo
 * The use of Looks is highly recommended with Open DRT
 * To use one of the looks, you need to combine it with a View. Like this for instance:
 
-```- !<View> {name: OpenDRT 0.3.5 Contrast, colorspace: openDRT 0.3.5 - Rec.709 - 2.4 Gamma, looks: Contrast CDL}```
+```- !<View> {name: OpenDRT 1.0.0 Contrast, colorspace: openDRT 1.0.0 - Rec.709 - 2.4 Gamma, looks: Contrast CDL}```
 
 # Other available Color Management Workflows
 | Name                                                                                             | Author               | Release date |              Observations                             |
