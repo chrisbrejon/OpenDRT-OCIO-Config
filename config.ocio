@@ -23,20 +23,20 @@ roles:
   mari_scalar_monitor: rec709_display
   mari_color_picker: rec709_display
   mari_working: linear
-  mari_int8: srgb_texture
-  mari_int16: srgb_texture
+  mari_int8: srgb_encoding
+  mari_int16: srgb_encoding
   mari_int_scalar: non-colour data
   mari_scalar8: non-colour data
   mari_float: linear
   reference: lin_xyz
   srgb_linear: linear 
-  substance_3d_painter_standard_srgb: srgb_texture
-  substance_3d_painter_bitmap_import_8bit: srgb_texture
-  substance_3d_painter_bitmap_import_16bit: srgb_texture
+  substance_3d_painter_standard_srgb: srgb_encoding
+  substance_3d_painter_bitmap_import_8bit: srgb_encoding
+  substance_3d_painter_bitmap_import_16bit: srgb_encoding
   substance_3d_painter_bitmap_import_floating: linear
-  substance_3d_painter_substance_material: srgb_texture
-  substance_3d_painter_bitmap_export_8bit: srgb_texture
-  substance_3d_painter_bitmap_export_16bit: srgb_texture
+  substance_3d_painter_substance_material: srgb_encoding
+  substance_3d_painter_bitmap_export_8bit: srgb_encoding
+  substance_3d_painter_bitmap_export_16bit: srgb_encoding
   substance_3d_painter_bitmap_export_floating: linear
 
 displays:
@@ -135,7 +135,7 @@ colorspaces:
     allocationvars: [0, 1]             
 
   - !<ColorSpace>
-    name: srgb_texture
+    name: srgb_encoding
     family: Utility
     bitdepth: 32f
     description: sRGB Piecewise Function - Rec.709 - D65
