@@ -29,7 +29,8 @@ roles:
   mari_scalar8: non-colour data
   mari_float: linear
   reference: lin_xyz
-  srgb_linear: linear 
+  srgb_linear: linear
+  srgb_texture: srgb_encoding
   substance_3d_painter_standard_srgb: srgb_encoding
   substance_3d_painter_bitmap_import_8bit: srgb_encoding
   substance_3d_painter_bitmap_import_16bit: srgb_encoding
